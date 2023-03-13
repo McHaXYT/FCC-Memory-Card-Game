@@ -1,0 +1,148 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    font-family: 'VT323', monospace;
+    background-color: #2B3467;
+    text-align: center;
+    overflow-x: hidden;
+}
+
+.main-wrapper {
+    height: 100%;
+    width: 100%;
+    display: table;
+}
+
+.wrapper {
+    display: table-cell;
+    height: 100%;
+    vertical-align: middle;
+}
+
+.hero-section-img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.h-heading {
+    margin-top: 100px;
+    font-size: 85px;
+    color: #FCFFE7;
+    letter-spacing: 1px;
+    margin-bottom: 50px;
+}
+
+.menu {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.btn {
+    font-size: 22px;
+    text-decoration: none;
+    color: #FCFFE7;
+    text-align: center;
+    background-color: #EB455F;
+    padding: 10px 20px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
+.btn:hover {
+    transform: translateY(-6px);
+    transition: all .2s ease-in-out;
+}
+
+.btn:active {
+    transform: translateY(6px);
+    transition: all .2s ease-in-out;
+}
+
+.main-absolute {
+    position: absolute;
+    z-index: 999;
+    left: 0;
+    right: 0;
+    top: 28%;
+    width: 350px;
+    margin: 0 auto 0 auto;
+    background-color: #fff;
+    padding: 0px;
+    border-radius: 10px;
+}
+
+.flex-container-inst {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+    padding: 10px;
+}
+
+.close {
+    font-family: 'Public Sans', sans-serif;
+    text-decoration: none;
+    color: #2B3467;
+    margin-left: auto;
+    margin-right: 10px;
+    font-size: 28px;
+}
+
+.close:hover {
+    color: #EB455F;
+    transform: translateY(-3px);
+    transition: all .2s ease-in-out;
+}
+
+.close:active {
+    transform: translateY(6px);
+    transition: all .2s ease-in-out;
+}
+
+.main-h {
+    color: #EB455F;
+    font-family: 'Public Sans', sans-serif;
+    font-size: 28px;
+    text-align: left;
+    margin-left: 20px;
+}
+
+ul {
+    margin-top: 20px;
+    margin-bottom: 30px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-direction: column;
+    text-align: left;
+    margin-left: 20px;
+    list-style-type: disc;
+}
+
+li {
+    color: #2B3467;
+    font-size: 18px;
+    max-width: 300px;
+    text-transform: capitalize;
+}
+
+.display-none {
+    display: none;
+}
+
+@media (max-width: 375px) {
+    .h-heading {
+        margin-top: 40px;
+    }
+}
